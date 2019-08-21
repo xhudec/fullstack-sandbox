@@ -1,0 +1,28 @@
+{
+  "name": "fullstack-sandbox",
+  "version": "1.0.0",
+  "description": "A full-stack sandbox monorepository with Simple Frontend app in NextJS (React) and Simple Backend API in Express, Apollo GraphQL and TypeORM",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhudec/fullstack-sandbox.git"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "typescript",
+    "apollo",
+    "graphql",
+    "typeorm",
+    "express"
+  ],
+  "author": "Lukas Hudec <hudec.luke@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xhudec/fullstack-sandbox/issues"
+  },
+  "homepage": "https://github.com/xhudec/fullstack-sandbox#readme"
+}

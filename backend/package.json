@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A simple Express Node Backend with GraphQL API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "typescript",
+    "graphql",
+    "typeorm"
+  ],
+  "author": "Lukas Hudec <hudec.luke@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.8.2",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2"
+  }
+}
