@@ -1,5 +1,6 @@
 ---
-title: "🐛 Bug Report"
+name: "🐛 Bug Report"
+about: "Something is terribly wrong! 🤬"
 labels: Bug 🐛
 assignees: xhudec
 ---
