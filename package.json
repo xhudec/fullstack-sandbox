@@ -25,18 +25,22 @@
   },
   "homepage": "https://github.com/xhudec/fullstack-sandbox#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"packages/**/*.(css|scss|js|jsx|ts|tsx)\""
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@strv/commitlint-config": "^1.1.0",
     "@strv/prettier-config": "^1.0.2",
+    "@strv/stylelint-config-styled-components": "^1.1.0",
     "@types/node": "^12.7.2",
     "@types/react": "^16.9.2",
+    "@types/styled-components": "^4.1.18",
     "husky": "^3.0.4",
     "lerna": "^3.16.4",
     "prettier": "1.18.2",
     "pretty-quick": "^1.11.1",
+    "stylelint": "^10.1.0",
     "typescript": "^3.5.3"
   }
 }
