@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "@fullstack-sandbox/backend",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A simple Express Node Backend with GraphQL API",
   "main": "index.js",
   "scripts": {

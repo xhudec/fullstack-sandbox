@@ -1,11 +1,10 @@
 {
   "name": "fullstack-sandbox",
-  "version": "1.0.0",
   "description": "A full-stack sandbox monorepository with Simple Frontend app in NextJS (React) and Simple Backend API in Express, Apollo GraphQL and TypeORM",
-  "main": "none",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xhudec/fullstack-sandbox.git"
@@ -24,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/xhudec/fullstack-sandbox/issues"
   },
-  "homepage": "https://github.com/xhudec/fullstack-sandbox#readme"
+  "homepage": "https://github.com/xhudec/fullstack-sandbox#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@strv/prettier-config": "^1.0.2",
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.9.2",
+    "lerna": "^3.16.4",
+    "prettier": "1.18.2",
+    "typescript": "^3.5.3"
+  }
 }
