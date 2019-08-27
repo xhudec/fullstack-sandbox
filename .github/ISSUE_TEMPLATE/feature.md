@@ -1,6 +1,6 @@
 ---
-name: "🚀 Feature Request"
-about: "I have a game changing idea! 💡"
+name: '🚀 Feature Request'
+about: 'I have a game changing idea! 💡'
 labels: Feature 🚀
 assignees: xhudec
 ---
