@@ -1,21 +1,13 @@
 {
   "name": "@fullstack-sandbox/frontend",
+  "description": "A simple NextJS App",
   "private": true,
   "version": "0.0.0",
-  "description": "A simple NextJS App",
-  "keywords": [
-    "react",
-    "nextjs",
-    "typescript",
-    "graphql"
-  ],
-  "author": "Lukas Hudec <hudec.luke@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "static:typecheck": "tsc"
+    "typecheck": "tsc --project ./tsconfig.json"
   },
   "dependencies": {
     "next": "9.0.4",
