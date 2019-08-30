@@ -17,6 +17,16 @@ module.exports = {
   plugins: ['@typescript-eslint', 'import'],
   parser: '@typescript-eslint/parser',
   rules: {
+    // conflicts with my personal preference or guidelines
+    'padding-line-between-statements': 'off',
+    'arrow-body-style': 'off',
+    'import/order': 'off',
+    '@typescript-eslint/member-ordering': 'off',
+
+    // prettier is responsible for all code formatting
+    'comma-dangle': 'off',
+    'function-paren-newline': 'off',
+
     // ! FIXME: remove after this rule is supported
     '@typescript-eslint/quotes': 'off',
     // ! FIXME: remove after the Linter Crashing for unknown reason is fixed
