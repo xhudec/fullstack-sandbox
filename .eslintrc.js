@@ -21,11 +21,13 @@ module.exports = {
     'padding-line-between-statements': 'off',
     'arrow-body-style': 'off',
     'import/order': 'off',
+    'import/group-exports': 'off',
     '@typescript-eslint/member-ordering': 'off',
 
     // prettier is responsible for all code formatting
     'comma-dangle': 'off',
     'function-paren-newline': 'off',
+    'no-extra-parens': 'off',
 
     // ! FIXME: remove after this rule is supported
     '@typescript-eslint/quotes': 'off',
