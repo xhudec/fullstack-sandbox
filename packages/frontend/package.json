@@ -1,6 +1,9 @@
 {
   "name": "@fullstack-sandbox/frontend",
   "description": "A simple NextJS App",
+  "engines": {
+    "node": ">=10"
+  },
   "private": true,
   "version": "0.0.0",
   "scripts": {
