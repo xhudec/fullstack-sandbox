@@ -1,13 +1,13 @@
 import React from 'react'
 import App, { AppProps } from 'next/app'
-import { ApolloClient } from 'apollo-boost'
+import { ApolloClient, NormalizedCacheObject } from 'apollo-boost'
 
-import withApollo from '../modules/graphql/withApollo'
+import withApollo from '../modules/graphql/with-apollo'
 
-import ContextController from '../components/ContextController'
+import ContextController from '../components/context-controller'
 
 interface IMyAppProps extends AppProps {
-  apolloClient: ApolloClient<{}>
+  apolloClient: ApolloClient<NormalizedCacheObject>
 }
 
 class MyApp extends App<IMyAppProps> {
