@@ -4,7 +4,9 @@ import fetch from 'isomorphic-unfetch'
 
 import { isBrowser } from '../../utils'
 
-export default function createApolloClient(initialState: NormalizedCacheObject): ApolloClient<{}> {
+export default function createApolloClient(
+  initialState: NormalizedCacheObject
+): ApolloClient<NormalizedCacheObject> {
   const isBrowserEnv = isBrowser()
 
   // ! FIXME: resolve TS issues
