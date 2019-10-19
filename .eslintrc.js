@@ -33,7 +33,7 @@ module.exports = {
     },
   },
   rules: {
-    // conflicts with my personal preference or guidelines
+    // conflicts with personal preference or guidelines
     'padding-line-between-statements': 'off',
     'arrow-body-style': 'off',
     'import/order': 'off',
@@ -44,8 +44,5 @@ module.exports = {
     'comma-dangle': 'off',
     'function-paren-newline': 'off',
     'no-extra-parens': 'off',
-
-    // ! FIXME: remove after the Linter Crashing for unknown reason is fixed
-    'import/no-unused-modules': 'off',
   },
 }
