@@ -16,6 +16,22 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint', 'import'],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: [
+      './tsconfig.json',
+      './packages/frontend/tsconfig.json',
+      './packages/backend/tsconfig.json',
+    ],
+    /**
+     * ! FIXME: because ESLint can't detect newly created modules for some reason
+     * @see https://github.com/typescript-eslint/typescript-eslint/issues/864#issuecomment-538167956
+     */
+    createDefaultProgram: true,
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   rules: {
     // conflicts with my personal preference or guidelines
     'padding-line-between-statements': 'off',
@@ -29,8 +45,6 @@ module.exports = {
     'function-paren-newline': 'off',
     'no-extra-parens': 'off',
 
-    // ! FIXME: remove after this rule is supported
-    '@typescript-eslint/quotes': 'off',
     // ! FIXME: remove after the Linter Crashing for unknown reason is fixed
     'import/no-unused-modules': 'off',
   },
