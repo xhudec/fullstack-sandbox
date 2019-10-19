@@ -15,7 +15,7 @@ interface IHelloQueryData {
 }
 
 const HomePage: NextPage = () => {
-  const { loading, data } = useQuery<IHelloQueryData>(QUERY_HELLO_WORLD)
+  const { loading, data, error } = useQuery<IHelloQueryData>(QUERY_HELLO_WORLD)
 
   return (
     <div>
@@ -27,7 +27,11 @@ const HomePage: NextPage = () => {
         <h1>Welcome to Next.js!</h1>
       </div>
 
-      {loading ? <span>Loading...</span> : <p>{data && data.hello}</p>}
+      {loading && <span>Loading...</span>}
+
+      {data && <p>{data.hello}</p>}
+
+      {error && <span>Oops! Something went wrong!</span>}
     </div>
   )
 }
