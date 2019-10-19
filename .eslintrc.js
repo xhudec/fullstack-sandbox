@@ -14,7 +14,7 @@ module.exports = {
     '@strv/eslint-config-node/optional',
     '@strv/eslint-config-node/style',
   ],
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint', 'import', 'jest'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     tsconfigRootDir: __dirname,
@@ -32,6 +32,9 @@ module.exports = {
       jsx: true,
     },
   },
+  env: {
+    'jest/globals': true,
+  },
   rules: {
     // conflicts with personal preference or guidelines
     'padding-line-between-statements': 'off',
@@ -44,5 +47,8 @@ module.exports = {
     'comma-dangle': 'off',
     'function-paren-newline': 'off',
     'no-extra-parens': 'off',
+
+    // ! FIXME: strange behavior
+    'import/no-unused-modules': 'off',
   },
 }

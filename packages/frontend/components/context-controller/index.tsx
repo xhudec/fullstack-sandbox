@@ -2,7 +2,7 @@ import React from 'react'
 import { ApolloClient, NormalizedCacheObject } from 'apollo-boost'
 import { ApolloProvider } from '@apollo/react-hooks'
 
-interface IContextControllerProps {
+export interface IContextControllerProps {
   apolloClient: ApolloClient<NormalizedCacheObject>
   children: JSX.Element
 }

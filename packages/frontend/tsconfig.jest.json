@@ -2,7 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
-    "jsx": "preserve"
+    "isolatedModules": false,
+    "jsx": "react"
   },
   "include": ["next-env.d.ts", "*.ts", "*.tsx"]
 }
