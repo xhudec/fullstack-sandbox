@@ -7,12 +7,13 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "test": "is-ci \"test:coverage\" \"test:watch\"",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "storybook": "start-storybook",
+    "test": "is-ci \"test:coverage\" \"test:watch\"",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "typecheck": "tsc --project ./tsconfig.json"
   },
   "dependencies": {
@@ -31,8 +32,16 @@
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-info": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/react": "^5.2.4",
     "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
+    "@zeit/next-typescript": "^1.1.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
     "jest-watch-select-projects": "^1.0.0",
     "jest-watch-typeahead": "^0.4.0",

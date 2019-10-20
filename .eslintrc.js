@@ -48,6 +48,9 @@ module.exports = {
     'function-paren-newline': 'off',
     'no-extra-parens': 'off',
 
+    // typescript...
+    'react/prop-types': 'off',
+
     // ! FIXME: strange behavior
     'import/no-unused-modules': 'off',
   },
