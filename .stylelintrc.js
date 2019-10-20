@@ -1,5 +1,5 @@
 'use strict'
 
 module.exports = {
-  extends: ['@strv/stylelint-config-styled-components'],
+  extends: ['@strv/stylelint-config-styled-components', 'stylelint-config-prettier'],
 }
